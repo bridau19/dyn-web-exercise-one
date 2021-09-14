@@ -5,8 +5,8 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-import Article from '.containers/Article';
-import ArticleListing from "/containers/ArticleListing";
+import Article from './containers/Article';
+import ArticleListing from "./containers/ArticleListing";
 
 function App() {
   return (
