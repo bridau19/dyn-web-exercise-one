@@ -3,8 +3,8 @@ import React from 'react';
 function ArticleListing() {
     const articlesTitle='Article'
     return (
-        <div>
-            <h1>{articlesTitle}</h1>
+        <div className="PageWrapper">
+            <h2 className="headerOneStyle">{articlesTitle}</h2>
         </div>
     );
 }

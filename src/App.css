@@ -1,3 +1,15 @@
+.PageWrapper {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 0 25px;
+}
+
+.headerOneStyle {
+  font-size: 80px;
+  font-weight: normal;
+}
+
+
 .App {
   text-align: center;
 }
