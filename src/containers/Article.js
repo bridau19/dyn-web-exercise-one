@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { useParams } from "react-router-app";
+import { useParams } from "react-router-dom";
 import Data from '../components/data.json';
 
 function Article() {
