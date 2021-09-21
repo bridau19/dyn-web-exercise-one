@@ -1,20 +1,31 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import { useParams } from "react-router-app";
+import Data from '../components/data.json';
 
 function Article() {
-    const articleTitle = `Article Title`;
+    const [article, setArticle] = useState({});
+
+    let { id } = useParams();
+
+    useEffect(() => {
+        const dataToSet = Data.find((item) => item.id === id);
+        setArticle(dataToSet);
+    }, [id]);
+
     return (
         <main>
             <section className="ArticleHeader">
                 <div className="ArticleHeaderText">
-                    <h1 className="HeaderOneStyle">{articleTitle}</h1>
-                    <p className="ArticleCardDate">Date</p>
-                    <p className="ArticleHeaderBlurb">Text</p>
+                    <h1 className="HeaderOneStyle">{article.title}</h1>
+                    <p className="ArticleCardDate">{article.publishedDate}</p>
+                    <p className="ArticleHeaderBlurb">{article.blurb}</p>
                 </div>
             </section>
             <section className="ArticleText">
-                <p>Text</p>
-                <h2>Header Two</h2>
-                <h3>Header Three</h3>
+                {article.articleText && 
+                article.articleText.map((text, i) => {
+                    return <p key={i}>{text.data}</p>;
+                })}
             </section>
         </main>
        
