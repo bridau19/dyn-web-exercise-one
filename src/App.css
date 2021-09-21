@@ -4,14 +4,10 @@
   padding: 0 25px;
 }
 
-.headerOneStyle {
+.HeaderOneStyle {
   font-size: 80px;
   font-weight: normal;
   margin: 0px;
-}
-
-.ArticleListingHeader {
-  margin: 60px 0px 30px 0px;
 }
 
 .ArticleCardWrapper{
@@ -22,6 +18,51 @@
   justify-content: flex-start;
   margin-bottom: 50px;
   padding: 25px;
+}
+
+.ArticleCardBlurb {
+  font-size: 16x;
+  line-height: 1.5;
+}
+
+.ArticleHeader {
+  background-color: #e5e5e5;
+  padding: 40px 0;
+}
+
+.ArticleHeaderText {
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 0 25px;
+}
+
+.ArticleListingHeader {
+  margin: 60px 0px 30px 0px;
+}
+
+.ArticleText {
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 0 25px;
+}
+
+.ArticleText p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.ArticleText h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.ArticleText h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .ArticleCardImage {
